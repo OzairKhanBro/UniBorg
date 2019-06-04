@@ -45,16 +45,7 @@ if Config.HU_STRING_SESSION is not None:
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH
     )
-    print("Client Created")
-    @client.on(events.NewMessage(incoming=True))
-    async def handle_new_message(event):
-        try:
-            if "#SID" in event.message.text: #autobot
-                await event.message.click(0)
-                await event.message.reply("Hi i am there")
-        except:
-            print("Exception")
-    print(time.asctime(), '-', 'Auto-replying...')
+    
     borg.run_until_disconnected()
     print(time.asctime(), '-', 'Stopped!')
 elif len(sys.argv) == 2:
