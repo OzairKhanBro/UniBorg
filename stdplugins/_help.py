@@ -12,7 +12,7 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = ""
-    help_string = """@UniBorg
+    help_string = """
 Python {}
 Telethon {}
 message="commands available in @UniBorg 🌝
@@ -48,8 +48,13 @@ message="commands available in @UniBorg 🌝
 👉 `.get_id` Get ID of a Telegram chat
 👉 `.github <username>` Get info about a GitHub user
 👉 `.google search <Search Query>`
-👉 `.google image <Search Query>`
-👉 `.google reverse search` As a reply to an image
+👉 `.google image <Search Query>`""".format(
+        sys.version,
+        __version__
+    )
+
+    
+👉 message2="""`.google reverse search` As a reply to an image
 👉 `.dc`
 👉 `.config` <won't tell What this does>
 👉 `.helpme` no one gonna help you 🤣🤣🤣🤣
@@ -105,11 +110,7 @@ antiflood
 SED
 snips
 filters
-xtools"
-UserBot Forked from https://github.com/expectocode/uniborg""".format(
-        sys.version,
-        __version__
-    )
+xtools"""
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER  # pylint:disable=E0602
     if tgbotusername is not None:
         results = await borg.inline_query(  # pylint:disable=E0602
@@ -123,7 +124,9 @@ UserBot Forked from https://github.com/expectocode/uniborg""".format(
         )
         await event.delete()
     else:
-        await event.reply(help_string + "\n\n" + s_help_string)
+        await event.reply(help_string)
+        await event.reply(message2)
+        await event.reply(s_help_string)
         await event.delete()
 
 
