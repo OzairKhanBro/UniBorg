@@ -15,7 +15,7 @@ async def _(event):
     help_string = """
 Python {}
 Telethon {}
-message="commands available in @UniBorg 🌝
+message=commands available in @UniBorg 🌝
 👉 `.unload <PLUGIN NAME>` Remove plugin from running
 👉 `.load <PLUGIN NAME>` Reload plugin into the UserBot
 👉 `.send plugin <Plugin Name>`
@@ -54,7 +54,7 @@ message="commands available in @UniBorg 🌝
     )
 
     
-👉 message2="""`.google reverse search` As a reply to an image
+message2="""👉 `.google reverse search` As a reply to an image
 👉 `.dc`
 👉 `.config` <won't tell What this does>
 👉 `.helpme` no one gonna help you 🤣🤣🤣🤣
