@@ -54,7 +54,7 @@ message=commands available in @UniBorg 🌝
     )
 
     
-	message2="""👉 `.google reverse search` As a reply to an image
+    message2="""👉 `.google reverse search` As a reply to an image
 👉 `.dc`
 👉 `.config` <won't tell What this does>
 👉 `.helpme` no one gonna help you 🤣🤣🤣🤣
