@@ -83,7 +83,7 @@ class Config(object):
     # For Databases
     # can be None in which case plugins requiring
     # DataBase would not work
-    DB_URI = os.environ.get("DATABASE_URL", "postgres://hdemyjmysdymbk:015860c82d4b5096199f88c88fc4b905a5914126332564c9e67bc5c2ba535429@ec2-23-21-234-53.compute-1.amazonaws.com:5432/d2grph6g68ss9k")
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://mjjicankgpjbso:000c67f585fbf83ebd652582a87584bd89e969629e4c688433233a3c3366fe8f@ec2-107-20-230-70.compute-1.amazonaws.com:5432/dcsfr8j53ae69n")
     # number of rows of buttons to be displayed in .helpme command
     NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5))
     # specify command handler that should be used for the plugins
